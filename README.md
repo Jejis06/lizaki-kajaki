@@ -103,7 +103,7 @@ ____TTWTTWTTTTT
 ```
 W tym przykładzie żeby zmienic parzystosc odetniemy zaznaczony fragment gdyz gdybyśmy odcięli drugą stronę stracilibysmy kilka innych liczb
 
-### Napisany algorytm znajduje sie w ./lizak.cpp
+### Napisany algorytm znajduje sie w ./lizak.cpp [.](./lizak.cpp)
 
 # > ZADANIE KAJAKI [[link do zadania]](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
 
