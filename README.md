@@ -22,12 +22,12 @@ dla k = 5 przykladowy podciag to 'TWT' a do wypisania podajemy jego początek i 
 
 ## ```Rozwiązanie : ```
 
-Okazuje się że przy limicie 1e6 zapytan gąsienica nie będzie optymalnym rozwiązaniem prawdopodobnie dalaby ok 30 pkt an 100.  
+Okazuje się że przy limicie 1e6 zapytan gąsienica nie będzie optymalnym rozwiązaniem prawdopodobnie dalaby ok 30 pkt na 100.  
 
-Rozwiązanie polega preprocessingu czyli policzeniu wszytkich mozliwych k dla danego ciągu
+Rozwiązanie polega na preprocessingu czyli policzeniu wszytkich mozliwych k dla danego ciągu
 Obliczone wyniki zapisalibysmy w tablicy par gdzie pierwszy element to indeks poczatku podciagu a drugi to indeks konca podciagu w ciagu podanym przez urzytkownika
 
-dla przykladu z lini 11 taka tablica wygladalaby tak :
+dla przykladu taka tablica wygladalaby tak :
 ```
 0:  
 1: 3 3
