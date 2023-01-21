@@ -1,31 +1,34 @@
---------------------------------------- ZADANIE LIZAK OI(18) --------------------------------------- 
+# > ZADANIE LIZAK OI(18)
 
-					Problem : 
+## ```Problem : ```
 
-Dostajemy ciag literek S skladajacy sie z liter 'T' i 'W' (eg. TWTWTWTTWTW....) rozmiar ciągu n i ilość zapytań m
-
-W ciągu 'T' ma wartośc 2 a 'W' ma warosc 1
+Dostajemy ciag literek (S) skladajacy sie z liter 'T' i 'W' (eg. TWTWTWTTWTW....)
+rozmiar ciągu (n) i ilość zapytań (m)
+```
+'T' ma wartośc 2 
+'W' ma warosc 1
+```
 
 Każde zapytanie podaje liczbe k i oczekuje takiego podciągu że wartość jego elementów będzie równa k
 
-					Przyklad: 
-
+## ```Przyklad : ```
+```
 n = 5 <-- rozmiar ciagu 
 m = 2 <-- ilosc zapytan 
 S = WTWTW <-- ciag
+```
+dla k = 2 przykladowy podciag to 'T' a do wypisania podajemy jego początek i koniec {2,2}  
+dla k = 5 przykladowy podciag to 'TWT' a do wypisania podajemy jego początek i koniec {2,4}  
 
-dla k = 2 przykladowy podciag to 'T' a do wypisania podajemy jego początek i koniec {2,2}
-dla k = 5 przykladowy podciag to 'TWT' a do wypisania podajemy jego początek i koniec {2,4}
+## ```Rozwiązanie : ```
 
-					Rozwiązanie : 
-
-Okazuje się że przy limicie 1e6 zapytan gąsienica nie będzie optymalnym rozwiązaniem prawdopodobnie dalaby ok 30 pkt an 100.
+Okazuje się że przy limicie 1e6 zapytan gąsienica nie będzie optymalnym rozwiązaniem prawdopodobnie dalaby ok 30 pkt an 100.  
 
 Rozwiązanie polega preprocessingu czyli policzeniu wszytkich mozliwych k dla danego ciągu
 Obliczone wyniki zapisalibysmy w tablicy par gdzie pierwszy element to indeks poczatku podciagu a drugi to indeks konca podciagu w ciagu podanym przez urzytkownika
 
-dla przykladu z lini 11 taka tablica wygladalaby tak
-
+dla przykladu z lini 11 taka tablica wygladalaby tak :
+```
 0:  
 1: 3 3
 2: 2 2
@@ -37,6 +40,7 @@ dla przykladu z lini 11 taka tablica wygladalaby tak
 8: 
 9:
 ....
+```
 
 Puste miejsca mowia nam ze dla takiego k nie ma rozwiazania
 Warto nadmienic ze np dla k=2 mogą byc dwa rózne przedzialy (2 2) oraz (4 4) w tym zadaniu mozemy wypisac dowolny z nich
@@ -49,7 +53,7 @@ jego suma jest rowna 7 czyli jest nieparzysta.
 
 
 rozpatrzajac wszystkie mozliwe poczatki i konce dowolnych ciagow mozemy zauwazyc ze zawsze wartosc danego ciagu bedziemy mogli zmniejszyc o 2
-
+```
 T.........T
 2---------2
 
@@ -61,16 +65,18 @@ T.........W
 
 W.........W
 1---------1
+```
 
 Oznacza to ze jezeli znamy sume danego ciagu i jest ona nieparzysta jestesmy w stanie obliczyc wszystkie mozliwe kombinacje mniejsze od sumy
-w przykladzie z lini 11 mamy ciag WTWTW ktory sumuje sie do 7
-
+w przykladzie z lini 11 mamy ciag WTWTW ktory sumuje sie do 7  
+  
 korzystajac z naszej obserwacji mozemy obliczyc wszystkie nieparzyste podciagi mniejsze od 7
-
+  ```
 WTWTW = 7 | odejmujemy 2 a skoro jedno 'W' jest rowne 1 musimy odjac oba
 _TWT_ = 5 | po obu stronach mamy 'T' warte 2 wiec mozemy zabrac dowolne 
 __WT_ = 3 | po jednej stronie mamy 'W' warte 1 a po drógiej 'T' warte 2 wiec zabieramy 'T'
-__W__ = 1 
+__W__ = 1
+```
 
 W ten sposób obliczylismy przedzialy dla wszystkich mozliwych nieparzystych k wiec zostaly nam juz tylko parzyste k aby otrzymac pelną tabelę
 
@@ -79,46 +85,51 @@ a z niej tym samym co dla liczb nieparzystych algorytmem schodzimy w dół
 
 Sposób jest ten poprawny gdyz jezeli zabierzemy 1 od dowolnej liczby parzystej stanie sie ona nieparzysta i na odwrót.
 
-
+```
 WTWTW |  nieparzyste zabieramy jedno W
 _TWTW = 6
 __WTW = 4
 ___T_ = 2
+```
 
 i w taki sposób uzyskalismy tablice wszystkich rozwiazan. Teraz pozostaje tylko pobrac od uzytkownika dowolne k sprawdzic czy posiada ono w naszej tablicy pare liczb opisujacych podciag jezeli tak wypisac go jezeli nie wypisac NIE na wyjscie.
 
+### Napisany algorytm znajduje sie w ./lizak.cpp
 
+# > ZADANIE KAJAKI
 
---------------------------------------- ZADANIE KAJAKI--------------------------------------- 
-
-					Problem : 
+## ```Problem : ``` 
 
 Dostajemy maksymalna wage danego kajaka m (kazdy moze pomiescic 2 osoby) nastepnie dostajemy liczbe osob n i po kolei n wag kazdego urzytkownika. Naszym zadaniem jest wypisac minimalna ilosc kajakow
 jake musimy wyporzyczyc aby kazdy sie zmiescil.
 
-					Przykład : 
+## ```Przykład : ``` 
 
-m = 100 <-- maksymalna waga jaka uniesie kajak
-n = 4 <-- ilosc ludzi
+```
+maksymalna waga jaką uniesie kajak
+m = 100
 
-	<-- kolejne wagi uczestnikow -->
+ilość ludzi
+n = 4 
+
+kolejne wagi uczestnikow
 w1 = 20
 w2 = 50
 w3 = 10
 w4 = 90
-
+```
 wynikiem dla takiej konfiguracji bedzie 2
 
 
-					Rozwiązanie : 
+## ```Rozwiązanie : ``` 
 
 Programowanie zachlanne
 
 Rozwiązanie tego zadania jest bardzo proste. Nalezy zauwazyc ze jezeli posortujemy uczestnikow od najlzejszych do najciezszych to bedziemy w stanie zobaczyc czy najciezszy moze wejsc do kajaka z najlzejszym.
 Jezeli nie najciezszy wezmie caly kajak dla siebie.
 
-Na przykladzie z lini 99 wyglada to tak
-
+Na przykladzie wyglada to tak :
+```
 *sortujemy wagi*
 
 10 20 50 90
@@ -131,10 +142,11 @@ __ 20 50 __
 sprawdzamy znowu czy 20 + 50 <= m
 
 ostatecznym wynikiem jest 2
-
+```
 
 Gdyby max_capacity kajaka byla 100 a wagi ludzi bylyby takie:
 10 20 30 40 80 90 90 90 90
+```
 
 To program przeszedłby przez to tak
  	
@@ -150,5 +162,5 @@ __ __ __ __ __ __ __ __ __		6 | konczymy program
 
 minimalna liczba kajakow do wyporzyzcenia to 6
 
-
-iIkajaki
+```
+### Napisany algorytm znajduje sie w ./kajak.cpp
