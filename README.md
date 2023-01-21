@@ -1,6 +1,7 @@
 # > ZADANIE LIZAK OI(18)
 
-## ```Problem : ```
+## ```Problem : ```[link do zadania](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
+
 
 Dostajemy ciag literek (S) skladajacy sie z liter 'T' i 'W' (eg. TWTWTWTTWTW....)
 rozmiar ciągu (n) i ilość zapytań (m)
