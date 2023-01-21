@@ -103,7 +103,7 @@ ____TTWTTWTTTTT
 ```
 W tym przykładzie żeby zmienic parzystosc odetniemy zaznaczony fragment gdyz gdybyśmy odcięli drugą stronę stracilibysmy kilka innych liczb
 
-### Napisany algorytm znajduje sie w ./lizak.cpp [.](./lizak.cpp)
+### Napisany algorytm znajduje sie w [./lizak.cpp](./lizak.cpp)
 
 # > ZADANIE KAJAKI [[link do zadania]](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
 
@@ -172,4 +172,4 @@ __ __ __ __ __ __ __ __ __		6 | konczymy program
 minimalna liczba kajakow do wyporzyzcenia to 6
 
 ```
-### Napisany algorytm znajduje sie w ./kajak.cpp
+### Napisany algorytm znajduje sie w [./kajak.cpp](./kajak.cpp)
