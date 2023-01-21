@@ -100,9 +100,8 @@ Wtedy zeby zmienic parzystosc sumy początkowej musimy nadal odjac W ale przy ok
 ```
 TTTWTTWTTWTTTTT | aby zmienic parzystośc odcinamy 3* T i 1 * W
 ____TTWTTWTTTTT
-
-W tym przykładzie żeby zmienic parzystosc odetniemy zaznaczony fragment gdyz gdybyśmy odcięli drugą stronę stracilibysmy kilka innych liczb
 ```
+W tym przykładzie żeby zmienic parzystosc odetniemy zaznaczony fragment gdyz gdybyśmy odcięli drugą stronę stracilibysmy kilka innych liczb
 
 ### Napisany algorytm znajduje sie w ./lizak.cpp
 
