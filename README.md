@@ -1,6 +1,6 @@
-# > ZADANIE LIZAK OI(18)
+# > ZADANIE LIZAK OI(18)https://szkopul.edu.pl/c/cslomv2/p/liz/17289/
 
-## ```Problem : ```[link do zadania](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
+## ```Problem : ```
 
 
 Dostajemy ciag literek (S) skladajacy sie z liter 'T' i 'W' (eg. TWTWTWTTWTW....)
@@ -97,7 +97,7 @@ i w taki sposób uzyskalismy tablice wszystkich rozwiazan. Teraz pozostaje tylko
 
 ### Napisany algorytm znajduje sie w ./lizak.cpp
 
-# > ZADANIE KAJAKI
+# > ZADANIE KAJAKI[link do zadania](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
 
 ## ```Problem : ``` 
 
