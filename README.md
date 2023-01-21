@@ -48,7 +48,7 @@ Warto nadmienic ze np dla k=2 mogą byc dwa rózne przedzialy (2 2) oraz (4 4) w
 Aby utworzyc taka tablice rozwiazan do ktorej mozemy sie odwolac mozemy zauwazyc ze dla dowolnego ciagu jezeli obliczymy sume calego ciagu to 
 będziemy w stanie obliczyc wszystkie inne sumy podciagi z ta samą parzystością.
 
-W przykladzie z lini jedenastej mamy ciag WTWTW
+W przykladzie mamy ciag WTWTW
 jego suma jest rowna 7 czyli jest nieparzysta.
 
 
@@ -68,7 +68,7 @@ W.........W
 ```
 
 Oznacza to ze jezeli znamy sume danego ciagu i jest ona nieparzysta jestesmy w stanie obliczyc wszystkie mozliwe kombinacje mniejsze od sumy
-w przykladzie z lini 11 mamy ciag WTWTW ktory sumuje sie do 7  
+w przykladzie mamy ciag WTWTW ktory sumuje sie do 7  
   
 korzystajac z naszej obserwacji mozemy obliczyc wszystkie nieparzyste podciagi mniejsze od 7
   ```
@@ -128,7 +128,7 @@ Programowanie zachlanne
 Rozwiązanie tego zadania jest bardzo proste. Nalezy zauwazyc ze jezeli posortujemy uczestnikow od najlzejszych do najciezszych to bedziemy w stanie zobaczyc czy najciezszy moze wejsc do kajaka z najlzejszym.
 Jezeli nie najciezszy wezmie caly kajak dla siebie.
 
-Na przykladzie wyglada to tak :
+Na przykladzie do tego zadania wyglada to tak :
 ```
 *sortujemy wagi*
 
