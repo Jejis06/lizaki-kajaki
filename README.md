@@ -1,4 +1,4 @@
-# > ZADANIE LIZAK OI(18)https://szkopul.edu.pl/c/cslomv2/p/liz/17289/
+# > ZADANIE LIZAK OI(18)[link do zadania](https://szkopul.edu.pl/c/cslomv2/p/liz/17289/)
 
 ## ```Problem : ```
 
