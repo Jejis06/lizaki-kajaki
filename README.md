@@ -95,6 +95,15 @@ ___T_ = 2
 
 i w taki sposób uzyskalismy tablice wszystkich rozwiazan. Teraz pozostaje tylko pobrac od uzytkownika dowolne k sprawdzic czy posiada ono w naszej tablicy pare liczb opisujacych podciag jezeli tak wypisac go jezeli nie wypisac NIE na wyjscie.
 
+Edge case który warto rozważyć to np TTTWTTWTTWTTTTT.
+Wtedy zeby zmienic parzystosc sumy początkowej musimy nadal odjac W ale przy okazji aby sie do niego dostac musmy poodejmowac T. Dlatego wybierzemy strone do odcięcia w której zeby zmienic parzystosc odetniemy jak najmniej
+```
+TTTWTTWTTWTTTTT | aby zmienic parzystośc odcinamy 3* T i 1 * W
+____TTWTTWTTTTT
+
+W tym przykładzie żeby zmienic parzystosc odetniemy zaznaczony fragment gdyz gdybyśmy odcięli drugą stronę stracilibysmy kilka innych liczb
+```
+
 ### Napisany algorytm znajduje sie w ./lizak.cpp
 
 # > ZADANIE KAJAKI [[link do zadania]](https://szkopul.edu.pl/c/cslomv2/p/kaj/21827/)
