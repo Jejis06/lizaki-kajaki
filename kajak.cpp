@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Smart empirch
+
 const int S = 30'010;
 int arr[S];
 
@@ -21,15 +23,10 @@ int main(){
 
 	while(s <= e){
 		amm++;
-		if(s==e) break;
-		else if(arr[s] + arr[e] <= w){
-			s++;
-			e--;
-		}
-		else e--;
+		if(arr[s] + arr[e] <= w) s++;		
+		e--;
 	}
 	cout << amm << '\n';
 
 
 }
-
